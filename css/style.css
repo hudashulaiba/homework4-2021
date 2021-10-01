@@ -86,7 +86,8 @@ td, th{
   text-transform:uppercase; /*uppercase*/
   min-width: 125px; /*always at least 125px wide*/ 
   padding: 10px;/*with 10px of padding*/
-  text-align: center; /*centered horizontally and vertically*/
+  vertical-align: center; /*centered vertically*/
+  text-align: center; /*centered horizontally*/
   background-color: #7e0825;/*dark red background (#7e0825)*/
 
 }
@@ -99,7 +100,7 @@ td, th{
 table tr:nth-child(odd) {background-color: transparent;}/*Every odd numbered table row has a transparent background*/
 table tr:nth-child(even) {background-color: #D1D1D1;}/*Every even numbered table row has a grey background (#D1D1D1)*/
 
-tr:hover td, tr:hover th{
+tbody tr:hover{
   background-color: rgba(126, 8, 37, .25);
 }
 /*Hovering over a row changes it to the same background color as the column header
