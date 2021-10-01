@@ -74,13 +74,6 @@ a{
 
 }
 
-/*TO DO: 50px radius rounded exterior corners 
-The rounded corners are a challenge problem - you are expected to struggle on this component.
-It is fine if there is some white space between the border and the table cells at the edge.
-HINT: You will need to round the corners of the table AND the corner cells. How can you use pseudeoclasses to make sure 
-the outer cells are rounded no matter how big the table is?   
-(You need extra code to make sure only the *outside* borders are rounded, not all of the cells.)*/
-
 
 td, th{
   text-align: center; /*centered text*/
@@ -114,6 +107,7 @@ but with an alpha transparency of .25 so don’t use hexadecimal.*/
 
 table{
     border: 5px solid #000000;
+    border-radius: 50px; /*50px radius rounded exterior CORNER CELLS*/
     
     margin-left: auto;
     margin-right: auto; /*Should be centered on a large screen*/
@@ -121,8 +115,21 @@ table{
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
+
+/*50px radius rounded TABLE CELL CORNERS*/
 thead tr:first-child th:first-child{
-}
+  border-top-left-radius: 50px;
+} /*top left*/
+thead tr:first-child th:last-child{
+  border-top-right-radius: 50px;
+} /*top right*/
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 50px;
+} /*bottom left*/
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 50px;
+} /*bottom right*/
+
 
 /*Add selectors and rules here*/
 
