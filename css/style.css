@@ -86,7 +86,7 @@ td, th{
   text-transform:uppercase; /*uppercase*/
   min-width: 125px; /*always at least 125px wide*/ 
   padding: 10px;/*with 10px of padding*/
-  vertical-align: center; /*centered vertically*/
+  vertical-align: middle; /*centered vertically*/
   text-align: center; /*centered horizontally*/
   background-color: #7e0825;/*dark red background (#7e0825)*/
 
